@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SANJU AM - Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
 <body>
 
@@ -14,19 +19,19 @@
       <h1 class="logo">Sanju's Portfolio</h1>
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Experience</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section class="hero">
+  <section class="hero" id="hero">
     <div class="hero-text">
       <h2>Hello, I’m <span>SANJU AM</span></h2>
       <p>I’m a beginner in web development and design, currently learning and building my first portfolio step-by-step.</p>
@@ -37,7 +42,7 @@
   </section>
 
   <!-- About Me Section -->
-  <section class="about">
+  <section class="about" id="about">
     <div class="container">
       <div class="about-img">
         <img src="sanju.png" alt="Sanju AM">
@@ -49,136 +54,124 @@
       </div>
     </div>
   </section>
-<!-- Projects Section -->
-<section class="projects">
-  <div class="container">
-    <h2>My Projects</h2>
-    <div class="project-grid">
-      <div class="project-card">
-        <h3>Landing Page</h3>
-        <p>A basic responsive landing page using HTML and CSS.</p>
-        <a href="#">View Project</a>
-      </div>
-      <div class="project-card">
-        <h3>Portfolio Website</h3>
-        <p>My personal portfolio website showcasing my learning journey.</p>
-        <a href="#">View Project</a>
-      </div>
-    </div>
-  </div>
-</section>
-  <!-- Contact Section -->
-<section class="contact">
-  <div class="container">
-    <h2>Contact Me</h2>
-    <p>If you’d like to collaborate or have any questions, feel free to reach out!</p>
-    
-    <div class="contact-info">
-      <p><strong>Email:</strong> <a href="mailto:sanjuam080@gmail.com">sanjuam080@gmail.com</a></p>
-      <p><strong>Phone:</strong> <a href="tel:+917397197250">+91 73971 97250</a></p>
-      <p><strong>Location:</strong> Chennai, Tamil Nadu, India</p>
-    </div>
 
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" rows="5" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </div>
-</section>
-  <!-- Skills Section -->
-<section class="skills">
-  <div class="container">
-    <h2>My Skills</h2>
-    <div class="skills-list">
-      <div class="skill">
-        <h3>HTML</h3>
-        <div class="bar">
-          <div class="progress" style="width: 75%;"></div>
-        </div>
-      </div>
-
-      <div class="skill">
-        <h3>Java</h3>
-        <div class="bar">
-          <div class="progress" style="width: 65%;"></div>
-        </div>
-      </div>
-
-      <div class="skill">
-        <h3>SQL</h3>
-        <div class="bar">
-          <div class="progress" style="width: 60%;"></div>
-        </div>
-      </div>
-
-      <div class="skill">
-        <h3>Python</h3>
-        <div class="bar">
-          <div class="progress" style="width: 55%;"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-  <!-- Projects Section -->
-<section class="projects">
-  <div class="container">
-    <h2>My Projects</h2>
-    <p>I’m currently learning and will be adding real projects soon. Stay tuned!</p>
-
-    <div class="project-list">
-      <div class="project-card">
-        <h3>Portfolio Website</h3>
-        <p>This website is my first step in web development, built using HTML and CSS as part of my internship.</p>
-      </div>
-
-      <div class="project-card">
-        <h3>Practice Projects Coming Soon</h3>
-        <p>More beginner-level projects in HTML, Java, Python, and SQL will be added as I learn and build.</p>
-      </div>
-    </div>
-  </div>
-</section>
-  <!-- Education Section -->
-<section class="education">
-  <div class="container">
-    <h2>Education</h2>
-    <ul>
-      <li><strong>College:</strong> Hindustan Institute of Technology and Science, Tamil Nadu</li>
-      <li><strong>Degree:</strong> B.Tech in Computer Science Engineering - AI & Data Science</li>
-      <li><strong>Year:</strong> 2024 - Present</li>
-    </ul>
-  </div>
-</section>
-
-<!-- Experience Section -->
-<section class="experience">
-  <div class="container">
-    <h2>Experience</h2>
-    <p>I’m currently gaining hands-on experience through the CodSoft Internship by learning HTML, CSS, GitHub, and building my first portfolio website step by step.</p>
-  </div>
-</section>
   <!-- Services Section -->
-<section class="services">
-  <div class="container">
-    <h2>My Services</h2>
-    <div class="service-cards">
-      <div class="service-card">
-        <h3>Web Development</h3>
-        <p>Basic front-end development using HTML and CSS for creating clean and simple websites.</p>
-      </div>
-      <div class="service-card">
-        <h3>Learning Projects</h3>
-        <p>Building beginner-level projects in Java, SQL, and Python to strengthen core programming skills.</p>
-      </div>
-      <div class="service-card">
-        <h3>Resume & Portfolio Setup</h3>
-        <p>Helping fellow students set up resumes and portfolios as I learn and grow.</p>
+  <section class="services" id="services">
+    <div class="container">
+      <h2>My Services</h2>
+      <div class="service-cards">
+        <div class="service-card">
+          <h3>Web Development</h3>
+          <p>Basic front-end development using HTML and CSS for creating clean and simple websites.</p>
+        </div>
+        <div class="service-card">
+          <h3>Learning Projects</h3>
+          <p>Building beginner-level projects in Java, SQL, and Python to strengthen core programming skills.</p>
+        </div>
+        <div class="service-card">
+          <h3>Resume & Portfolio Setup</h3>
+          <p>Helping fellow students set up resumes and portfolios as I learn and grow.</p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <h2>My Skills</h2>
+      <div class="skills-list">
+        <div class="skill">
+          <h3>HTML</h3>
+          <div class="bar"><div class="progress" style="width: 75%;"></div></div>
+        </div>
+        <div class="skill">
+          <h3>Java</h3>
+          <div class="bar"><div class="progress" style="width: 65%;"></div></div>
+        </div>
+        <div class="skill">
+          <h3>SQL</h3>
+          <div class="bar"><div class="progress" style="width: 60%;"></div></div>
+        </div>
+        <div class="skill">
+          <h3>Python</h3>
+          <div class="bar"><div class="progress" style="width: 55%;"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="experience" id="experience">
+    <div class="container">
+      <h2>Experience</h2>
+      <p>I’m currently gaining hands-on experience through the CodSoft Internship by learning HTML, CSS, GitHub, and building my first portfolio website step by step.</p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects">
+    <div class="container">
+      <h2>My Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Landing Page</h3>
+          <p>A basic responsive landing page using HTML and CSS.</p>
+          <a href="#">View Project</a>
+        </div>
+        <div class="project-card">
+          <h3>Portfolio Website</h3>
+          <p>My personal portfolio website showcasing my learning journey.</p>
+          <a href="#">View Project</a>
+        </div>
+      </div>
+
+      <p>I’m currently learning and will be adding real projects soon. Stay tuned!</p>
+      <div class="project-list">
+        <div class="project-card">
+          <h3>Portfolio Website</h3>
+          <p>This website is my first step in web development, built using HTML and CSS as part of my internship.</p>
+        </div>
+        <div class="project-card">
+          <h3>Practice Projects Coming Soon</h3>
+          <p>More beginner-level projects in HTML, Java, Python, and SQL will be added as I learn and build.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section class="education">
+    <div class="container">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>College:</strong> Hindustan Institute of Technology and Science, Tamil Nadu</li>
+        <li><strong>Degree:</strong> B.Tech in Computer Science Engineering - AI & Data Science</li>
+        <li><strong>Year:</strong> 2024 - Present</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>If you’d like to collaborate or have any questions, feel free to reach out!</p>
+
+      <div class="contact-info">
+        <p><strong>Email:</strong> <a href="mailto:sanjuam080@gmail.com">sanjuam080@gmail.com</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+917397197250">+91 73971 97250</a></p>
+        <p><strong>Location:</strong> Chennai, Tamil Nadu, India</p>
+      </div>
+
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
 </body>
 </html>
