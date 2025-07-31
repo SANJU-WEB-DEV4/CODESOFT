@@ -145,3 +145,24 @@ nav ul li a {
   text-decoration: none;
   font-weight: bold;
 }
+.contact-info {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 1rem;
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto 20px;
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
+
+.contact-info a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
